@@ -1,0 +1,25 @@
+.bg {
+  
+/*  background-image: url("/images/Image1.jpg");*/
+
+
+  height: 100%; 
+ width: 100%;
+background-color: darkgoldenrod;
+ 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.set{
+ 
+    padding: 30px;
+    text-align: center;
+    
+}
+.ee{
+    
+    font-size: 25px;
+    color: floralwhite;
+}

@@ -1,0 +1,1 @@
+$('#dateFrom').datepicker({ minDate: 0 });
