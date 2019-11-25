@@ -5,15 +5,13 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Hello Bulma!</title>
-
         <link rel="stylesheet"
             href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
         <script defer
             src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
         <script
             src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script src="https://kit.fontawesome.com/559ce95d02.js"
-            crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="../css/css.css">
         <style>
         #changeHoverColorNav:hover {
             background-color: hsl(0, 0%, 29%) !important;
@@ -42,145 +40,139 @@
                 <a id="burger-menu" role="button" class="navbar-burger burger"
                     aria-label="menu" aria-expanded="false"
                     data-target="navbarBasicExample">
-                    <span aria-hidden="true"></span>
-                </a>
-            </div>
+                    <span aria-hidden="true">
 
-            <div id="navbarBasicExample" class="navbar-menu">
-                <div class="navbar-start">
-                    <a class="navbar-item has-text-white
-                        has-background-grey-darker"
-                        id="changeHoverColorNav">
-                        Home
-                    </a>
-                    <a class="navbar-item has-text-white
-                        has-background-grey-darker"
-                        id="changeHoverColorNav">
-                        Contact Us
                     </a>
                 </div>
 
-                <div class="navbar-end">
-                    <div class="navbar-item">
-                        <div class="buttons">
-                            <a class="button is-light">
-                                Log Out
-                            </a>
+                <div id="navbarBasicExample" class="navbar-menu">
+                    <div class="navbar-start">
+                        <a class="navbar-item has-text-white
+                            has-background-grey-darker"
+                            id="changeHoverColorNav">
+                            Home
+                        </a>
+                        <a class="navbar-item has-text-white
+                            has-background-grey-darker"
+                            id="changeHoverColorNav">
+                            Contact Us
+                        </a>
+
+
+                    </div>
+
+                    <div class="navbar-end">
+                        <div class="navbar-item">
+                            <div class="buttons">
+                                <a class="button is-light">
+                                    Log Out
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </nav>
-        <section class="section">
-            <div class="container">
-                <div class="columns">
-                    <div class="column is-one-quarter
-                        has-background-white-ter">
-                        <aside class="menu">
-                            <p class="menu-label">
-                                General
-                            </p>
-                            <ul class="menu-list">
-                                <li><a id="changeHoverColorMenu">Dashboard</a></li>
-                                <li><a id="changeHoverColorMenu">My Bookings</a></li>
-                                <li><a id="changeHoverColorMenu">Profile</a></li>
-                                <li><a id="changeHoverColorMenu">Change
-                                        Password</a></li>
-                            </ul>
-                        </aside>
-                    </div>
-                    <div class="column">
-                        <h2 class="title is-2 has-text-centered">My Bookings</h2>
-                        <table class="table is-fullwidth is-bordered is-striped">
-                                <thead>
-                                  <tr>
-                                    <th><abbr title="Name">Name</abbr></th>
-                                    <th>Team</th>
-                                    <th><abbr title="Date">Date of Travel</abbr></th>
-                                    <th><abbr title="From">From</abbr></th>
-                                    <th><abbr title="To">To</abbr></th>
-                                    <th><abbr title="Departure">Departure</abbr></th>
-                                    <th><abbr title="Arrival">Arrival</abbr></th>
+            </nav>
+            <section class="section">
+                <div class="container">
+                    <div class="columns">
+                        <div class="column is-one-quarter
+                            has-background-white-ter">
+                            <aside class="menu">
+                                <p class="menu-label">
+                                    General
+                                </p>
+                                <ul class="menu-list">
+                                    <li><a id="changeHoverColorMenu">Dashboard</a></li>
+                                    <li><a id="changeHoverColorMenu">My Bookings</a></li>
+                                    <li><a id="changeHoverColorMenu">Profile</a></li>
+                                    <li><a id="changeHoverColorMenu">Change
+                                            Password</a></li>
+                                </ul>
+
+                            </aside>
+
+                        </div>
+                        <div class="column">
+                            <h3 class="title is-3 has-text-centered">Profile</h3>
+                            <div class="columns">
+                                <div class="column">
+                                    <div class="field">
+                                        <label class="label">Name</label>
+                                        <div class="control">
+                                            <input disabled id="name" class="input" type="text"
+                                                placeholder="e.g Alex Smith">
+                                        </div>
+                                    </div>
+
+                                    <div class="field">
+                                            <label class="label">Telephone</label>
+                                            <div class="control">
+                                                <input disabled id="phone" class="input"
+                                                    type="number" step="0.01"
+                                                    name="number">
+                                            </div>
+                                        </div>
                                     
-                                  </tr>
-                                </thead>
-                                <tfoot>
-                                  <tr>
-                                        <th><abbr title="Name">Name</abbr></th>
-                                        <th>Team</th>
-                                        <th><abbr title="Date">Date of Travel</abbr></th>
-                                        <th><abbr title="From">From</abbr></th>
-                                        <th><abbr title="To">To</abbr></th>
-                                        <th><abbr title="Departure">Departure</abbr></th>
-                                        <th><abbr title="Arrival">Arrival</abbr></th>
-                                  </tr>
-                                </tfoot>
-                                <tbody>
-                                  <tr>
-                                    <th>1</th>
-                                    <td><a href="https://en.wikipedia.org/wiki/Leicester_City_F.C." title="Leicester City F.C.">Leicester City</a> <strong>(C)</strong>
-                                    </td>
-                                    <td>38</td>
-                                    <td>23</td>
-                                    <td>12</td>
-                                    <td>3</td>
+                                </div>
+                                <div class="column">
+                                    <div class="field">
+                                        <label class="label">Email</label>
+                                        <div class="control">
+                                            <input disabled id="email" class="input" type="email"
+                                                placeholder="e.g. alexsmith@gmail.com">
+                                        </div>
+                                    </div>
                                     
-                                    <td>SthSth</a></td>
-                                  </tr>
-                                  <tr>
-                                    <th>1</th>
-                                    <td><a href="https://en.wikipedia.org/wiki/Leicester_City_F.C." title="Leicester City F.C.">Leicester City</a> <strong>(C)</strong>
-                                    </td>
-                                    <td>38</td>
-                                    <td>23</td>
-                                    <td>12</td>
-                                    <td>3</td>
-                                    
-                                    <td>SthSth</a></td>
-                                  </tr>
-                                  <tr>
-                                    <th>1</th>
-                                    <td><a href="https://en.wikipedia.org/wiki/Leicester_City_F.C." title="Leicester City F.C.">Leicester City</a> <strong>(C)</strong>
-                                    </td>
-                                    <td>38</td>
-                                    <td>23</td>
-                                    <td>12</td>
-                                    <td>3</td>
-                                    
-                                    <td>SthSth</a></td>
-                                  </tr>
-                                  <tr>
-                                    <th>1</th>
-                                    <td><a href="https://en.wikipedia.org/wiki/Leicester_City_F.C." title="Leicester City F.C.">Leicester City</a> <strong>(C)</strong>
-                                    </td>
-                                    <td>38</td>
-                                    <td>23</td>
-                                    <td>12</td>
-                                    <td>3</td>
-                                    
-                                    <td>SthSth</a></td>
-                                  </tr>
-                                  
-                                </tbody>
-                              </table>
+                                </div>
+
+                            </div>
+                            <div class="container">
+                                <div class="field is-grouped">
+                                    <div class="control">
+                                        <button onclick="toggle()" type="button"
+                                            class="button is-info
+                                            set">Edit</button>
+                                    </div>
+                                    <div class="control">
+                                        <input class="button is-success"
+                                            type="submit" id="sub"
+                                            name="submit" value="Submit"
+                                            disabled>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <script>
+            <script>    
+            function toggle() { 
+                var name = document.getElementById("name");
+                var email = document.getElementById("email"); 
+                var phone = document.getElementById("phone");
+                var submit = document.getElementById("sub");
+                var flag = name.disabled;
+                name.disabled = !(flag); 
+                email.disabled = !(flag); 
+                submit.disabled = !(flag); 
+                phone.disabled = !(flag); 
+            } 
+            
             $(document).ready(function() {
 
                 // Check for click events on the navbar burger icon
                 $(".navbar-burger").click(function() {
 
-                    // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-                    $(".navbar-burger").toggleClass("is-active");
-                    $(".navbar-menu").toggleClass("is-active");
+                // Toggle the "is-active" class on both the "navbar-burger" and the
+                "navbar-menu"
+                $(".navbar-burger").toggleClass("is-active");
+                $(".navbar-menu").toggleClass("is-active");
 
-                });
             });
-        </script>
-    </body>
+            });
+            </script>
+        </body>
 
-</html>
+    </html>
